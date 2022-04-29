@@ -28,7 +28,7 @@ body {
 }
 .text {
     color: white;
-    background-color: grey;
+    background-color: rgb(161, 161, 161);
     text-align: center;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
