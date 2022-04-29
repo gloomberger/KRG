@@ -2,20 +2,20 @@ body {
     margin: 0;
     padding: 0;
 }
-.row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-}
 .container {
     max-width: 90%;
     width: 100vh;
     margin: 0 auto;
 }
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
 .column {
     width: 20%;
     box-sizing: border-box;
-    padding: 8%;
+    padding: 8px;
 }
 .box {
     height: 140px;
@@ -46,4 +46,33 @@ body {
     p {
         font-size: 0.8em;
     }
+}
+@media screen and (max-width: 414px) {
+    .container {
+        max-width: 50%;
+    }
+    .column {
+        flex-basis: 100%;
+    }
+    h1 {
+        font-size: 0.6em;
+        text-align: center;
+    }
+    p {
+        font-size: 0.6em;
+    }
+    
+}
+.box > p {
+    font-size: 1em;
+    text-align: center;
+    transform: translate(0px, 122px);
+    background-color: white;
+    border-radius: 5%;
+}
+h1 {
+    font-size: 1.5em;
+}
+.box > p {
+    align-self: flex-end;
 }
